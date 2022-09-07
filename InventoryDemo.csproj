@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AForge.Video" Version="2.2.5" />
+    <PackageReference Include="AForge.Video.DirectShow" Version="2.2.5" />
+    <PackageReference Include="MySql.Data" Version="8.0.30" />
+    <PackageReference Include="ZXing.Net" Version="0.16.8" />
+    <PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Form10.cs" />
+    <Compile Update="Form11.cs" />
+    <Compile Update="Form12.cs" />
+    <Compile Update="Form13.cs" />
+    <Compile Update="Form14.cs" />
+    <Compile Update="Form15.cs" />
+    <Compile Update="Form9.cs" />
+    <Compile Update="Form8.cs" />
+    <Compile Update="Form7.cs" />
+    <Compile Update="Form6.cs" />
+    <Compile Update="Form5.cs" />
+    <Compile Update="Form4.cs" />
+    <Compile Update="Form3.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
